@@ -143,17 +143,19 @@ const Hero = () => {
             className={`text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-400 ${loaded ? "opacity-100 transform translate-y-0" : "opacity-0 transform -translate-y-4"
               }`}
           >
-            Downscaling of Satellite based air quality map for unprecedented accuracy and insights into environmental conditions.
+            Downscaling satellite-based air quality maps for real-time monitoring, unmatched accuracy, and deeper insights into environmental conditions.
           </p>
 
           <div
             className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-600 ${loaded ? "opacity-100 transform translate-y-0" : "opacity-0 transform -translate-y-4"
               }`}
           >
-            <button className="rounded-full bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-base font-medium flex items-center gap-2 transition-all duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40">
-              Explore
-              <ArrowRight size={18} />
-            </button>
+            <a href="https://waqi.info/#/c/4.333/7.871/2.3z">
+              <button className="rounded-full bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-base font-medium flex items-center gap-2 transition-all duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40">
+                Explore
+                <ArrowRight size={18} />
+              </button>
+            </a>
           </div>
         </div>
       </div>
