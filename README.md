@@ -1,1 +1,1 @@
-Downscaling of Satellite based air quality map using AI/ML
+Downscaling of Satellite based air quality map using AI/ML.
