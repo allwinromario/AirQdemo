@@ -15,28 +15,29 @@ const Results = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Result card with View button */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 px-4 md:px-8">
           <ResultCard
             title="Our Planet's Air"
             description="Our Planet's Air visualizes real-time air quality data from the World Air Quality Index API, showing key pollutants like PM2.5, PM10, NO2, and CO on an interactive map to track pollution trends."
             link="http://airqnet.netlify.app"
+            className="w-full md:w-1/2 bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
           />
 
           <ResultCard
-            title="Global Air Quality Tracker"
-            description="Global Air Quality Tracker monitors real-time air pollution using the OpenWeather API, displaying key pollutants like PM2.5, PM10, NO2, and CO on an interactive map to track trends."
-            link="YOUR_BACKEND_LINK_HERE"
+            title="Sentinel-5P NO2 Data Downscaling"
+            description="This application processes and visualizes Sentinel-5P satellite NO₂ data through interactive maps that display global pollution patterns. It enhances the data quality by downscaling low-resolution air quality measurements to higher resolution using multiple scientific techniques including Gaussian smoothing, bilinear/cubic interpolation, and machine learning-based regression. The tool provides comprehensive analysis capabilities by comparing original and processed data through difference maps and statistical metrics, while also offering export options to facilitate further research and reporting."
+            link="https://vidhi2004-downscalingi-website-app-ypw6co.streamlit.app/"
+            className="w-full md:w-1/2 bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
           />
 
-          <ResultCard
+          {/*<ResultCard
             title="Air Quality Edge Functions"
             description="Air Quality Edge Functions uses Netlify Edge Functions to fetch real-time air quality data, delivering key pollutants like PM2.5, PM10, and CO for fast, dynamic updates."
             link="YOUR_BACKEND_LINK_HERE"
-          />
+          />*/}
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
