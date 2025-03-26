@@ -20,7 +20,7 @@ const Results = () => {
           <ResultCard
             title="Our Planet's Air"
             description="Our Planet's Air visualizes real-time air quality data from the World Air Quality Index API, showing key pollutants like PM2.5, PM10, NO2, and CO on an interactive map to track pollution trends."
-            link="http://127.0.0.1:5500/PlanetAir/dist/index.html"
+            link="http://airqnet.netlify.app"
           />
 
           <ResultCard
