@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { LogIn, UserPlus } from "lucide-react";
+import AuthModals from "@/components/AuthModals";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -53,24 +52,7 @@ const Navbar = () => {
           <NavLink onClick={() => handleScrollToSection("contact")}>Contact</NavLink>
         </div>
 
-        <div className="flex items-center gap-3">
-          <Button
-            size="sm"
-            variant="ghost"
-            className="text-white gap-2 rounded-full hover:bg-white/10"
-          >
-            <LogIn size={16} />
-            <span className="hidden sm:inline">Sign In</span>
-          </Button>
-
-          <Button
-            size="sm"
-            className="bg-space-blue hover:bg-space-blue/90 text-white gap-2 rounded-full px-4 transition-all"
-          >
-            <UserPlus size={16} />
-            <span className="hidden sm:inline">Register</span>
-          </Button>
-        </div>
+        <AuthModals />
       </div>
     </nav>
   );
