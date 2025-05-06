@@ -1,4 +1,4 @@
-# AirQ - Air Quality Monitoring Application
+# Downscaling of Satellite based air quality map using AI/ML
 
 AirQ is a web application for monitoring air quality with user authentication using MongoDB.
 
@@ -117,3 +117,10 @@ AirQ is a web application for monitoring air quality with user authentication us
   ```
 
 - **Get current user**: `GET /api/auth/me` (Requires authentication token)
+
+## Contributors
+
+- V. Allwin Fernando
+- Vidhi Kamat
+- Fathima Kohnain
+- Mohammed Yusuf Furqan
